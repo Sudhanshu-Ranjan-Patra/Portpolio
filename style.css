@@ -9,6 +9,10 @@ body {
     background: rgb(252, 128, 5);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     display: flex;
     justify-content: space-between;
