@@ -59,7 +59,7 @@ header {
     color: #ccc;
 }
 
-footer {
+section {
     width: 100%;
     max-height: 100%;
     background: #0a272f;
@@ -101,14 +101,17 @@ footer {
     border: 0.5px solid rgb(20, 40, 57);
     border-radius: 5px;
     font-size: 20px;
-    box-shadow:2px 2px 2px 2px rgba(249, 0, 0, 0.1);
+    
     transition: transform 0.2s ;
     cursor: pointer;
     font-weight: 500;
 }
 
 .button:active {
-    color: #000000;
+    color: #ffffff;
+    text-shadow: 1px 1px 20px #ffffff;
+    background: #0a272f;
+    box-shadow: 1px 1px 20px #868989;
 }
 
 .home {
@@ -215,7 +218,7 @@ footer {
 
 .skills-element:hover {
     transform: translateY(-10px);
-    box-shadow: 5px 10px 12px rgba(255, 255, 255, 0.35);
+    box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.749);
 }
 
 .skills-logo img {
@@ -332,15 +335,158 @@ footer {
 }
 
 .contact-left {
-    margin: 50px 200px;
-    padding-right: 100px;
-    border-right: 1px solid #1d3446;
+    display: grid;
+    margin: 0px 0px 200px 200px;
+    padding-right: 80px;
 }
 
 .contact-left .first {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: coral;
-    font-size: 34px;
+    font-size: 30px;
     font-weight: 100;
-    margin-bottom:40px;
+    margin-bottom:30px;
+    letter-spacing: 2px;
+    
+}
+.contact-left .first:hover{
+    text-shadow: 2px 2px 20px #ff9d00;
+}
+
+.contact-left .second {
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+
+.contact-left .second a {
+    color: #fafafa;
+    transition: color 0.2s ease-in-out;
+}
+
+.contact-left .second a:hover {
+    color: #0084ff;
+    text-shadow: 1px 1px 10px #00b7ff;
+}
+
+.contact-left .third {
+    display: flex;
+    gap: 50px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    color: #fff;
+    margin:50px 0px;
+}
+
+.third-contact {
+    font-size: larger;
+    margin-bottom: 15px;
+}
+
+.contact-left .third .third-email a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #2984af;
+}
+
+.media{
+    display: flex;
+    gap: 5px;
+}
+
+.media a{
+    display: inline;
+    font-size: 25px;
+    color: #b1dcee;
+    text-shadow: 1px 1px 10px #080706;
+}
+
+.contact-right {
+    display:block;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.contact-right input {
+    width: 500px;
+    height: 60px;
+    color: #ffffff;
+    outline: none;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    padding-left: 20px;
+    background: #0a272f;
+    border-radius: 20px;
+    border: 1px solid #584a6fb5;
+    box-shadow: 1px 1px 10px #584a6fb5;
+    font-size: 15px;
+    cursor:auto;
+    line-height: 2.5;
+    caret-color:#ffffff;
+}
+
+.contact-right input:hover {
+    box-shadow: 1px 1px 20px #2984af;
+    caret-color:#04d9ff;
+}
+
+.contact-right input::placeholder {
+    color: #fff;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-weight: 100;
+}
+
+.form {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
+.send button{
+    background: #0a272f;
+    color: #cbcaca;
+    font-size: 14px;
+    padding: 15px 55px;
+    margin: 0px 50px;
+    margin-right:350px;
+    margin-bottom: 100px;
+    border-radius: 15px;
+    border: 1px solid #584a6fb5;
+    box-shadow: 1px 1px 10px #584a6fb5;  
+    cursor: pointer;
+}
+
+.send button:hover {
+    border: 1px solid #437083;
+    box-shadow: 1px 1px 10px #2984af; 
+    text-shadow:1px 1px 20px #0084ff;
+}
+
+.send button:active {
+    color: #000000;
+    border: 1px solid #76878e;
+    box-shadow: 1px 1px 10px #93bacb; 
+    text-shadow:1px 1px 20px #fdfdfd;
+}
+
+.up-button {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.up-button a{
+    color: #085f79;
+    text-shadow: 1px 1px 10px #0c346b;
+}
+
+.end {
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 20px;
+    background:  rgba(252, 128, 5, 0.908);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
