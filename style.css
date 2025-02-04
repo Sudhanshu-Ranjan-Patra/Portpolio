@@ -330,3 +330,17 @@ footer {
     color: #4d6a7b;
     margin: 10px 0px 10px 50px;
 }
+
+.contact-left {
+    margin: 50px 200px;
+    padding-right: 100px;
+    border-right: 1px solid #1d3446;
+}
+
+.contact-left .first {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: coral;
+    font-size: 34px;
+    font-weight: 100;
+    margin-bottom:40px;
+}
